@@ -10,5 +10,6 @@ public class test10172 {
 		System.out.println("   `~\\/");
 		System.out.println("      |");
 		System.out.println("      |");
+		System.out.println("hihi");
 	}
 }
