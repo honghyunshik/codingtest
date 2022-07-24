@@ -9,6 +9,7 @@ public class Quiz8958 {
 		String[] lst = new String[5];
 		for(int i=0;i<num;i++) {
 			lst[i] = scan.next();
+			
 		}
 		for(int i=0;i<lst.length;i++) {
 			int count=0;

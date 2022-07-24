@@ -10,6 +10,7 @@ public class Quiz4344 {
 		sc.nextLine();
 		for(int i=0;i<num;i++) {
 			String input = sc.nextLine();
+			
 		}
 	}
 }
