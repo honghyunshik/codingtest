@@ -1,4 +1,4 @@
-package codingtest;
+package codingtest1week;
 
 import java.util.HashMap;
 import java.util.Scanner;

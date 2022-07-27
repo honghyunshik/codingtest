@@ -1,4 +1,4 @@
-package codingtest;
+package codingtest1week;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class Quiz8958 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int num = scan.nextInt();
-		String[] lst = new String[5];
+		String[] lst = new String[num];
 		for(int i=0;i<num;i++) {
 			lst[i] = scan.next();
 			
@@ -18,8 +18,11 @@ public class Quiz8958 {
 				if(lst[i].charAt(j)=='O') {
 					count+=1;
 					ans+=count;
-				}else count=0;
-			}System.out.println(ans);
+				} else {
+					count=0;
+				}
+			}
+			System.out.println(ans);
 		}
 	}
 }
