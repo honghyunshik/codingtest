@@ -1,17 +1,19 @@
 package codingtest3week;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
 public class Quiz18258 {
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         String input = br.readLine();
         int num = Integer.parseInt(input);
-        
         ArrayList<Integer> arr = new ArrayList<>();
         for(int i=0;i<num;i++) {
         	input = br.readLine();
@@ -21,59 +23,36 @@ public class Quiz18258 {
         		arr.add(input_int);
         	}else if(input.equals("pop")) {
         		if(arr.size()!=0) {
-        			System.out.println(arr.get(0));
+        			bw.write(arr.get(0) + "\n");
             		arr.remove(0);
         		}else {
-        			System.out.println(-1);
+        			bw.write(-1 + "\n");
         		}
         		
         	}else if(input.equals("size")) {
-        		System.out.println(arr.size());
+        		bw.write(arr.size() + "\n");
         	}else if(input.equals("empty")) {
         		if(arr.isEmpty()) {
-        			System.out.println(1);
+        			bw.write(1 + "\n");
         		}else {
-        			System.out.println(0);
+        			bw.write(0 + "\n");
         		}
         			
         	}else if(input.equals("front")) {
         		if(arr.size()!=0) {
-        			System.out.println(arr.get(0));
+        			bw.write(arr.get(0) + "\n");
         		}else {
-        			System.out.println(-1);
+        			bw.write(-1 + "\n");
         		}
         	}else if(input.equals("back")) {
         		if(arr.size()!=0) {
-        			System.out.println(arr.get(arr.size()-1));
+        			bw.write(arr.get(arr.size()-1) + "\n");
         		}else {
-        			System.out.println(-1);
+        			bw.write(-1 + "\n");
         		}
         	}
         }
-        
+        bw.close();
 	}
 	
-	public static void pop(ArrayList<Integer> arr) {
-		
-	}
-	
-	public static void push(ArrayList<Integer> arr, int num) {
-		
-	}
-	
-	public static void size(ArrayList<Integer> arr) {
-		
-	}
-	
-	public static void empty(ArrayList<Integer> arr) {
-		
-	}
-	
-	public static void front(ArrayList<Integer> arr) {
-		
-	}
-	
-	public static void back(ArrayList<Integer> arr) {
-		
-	}
 }
